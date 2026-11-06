@@ -1,42 +1,29 @@
-PROYECTO XV GABRIELA LISSETH — GITHUB PAGES
-============================================
+PROYECTO XV GABRIELA — GITHUB PAGES
 
-CONTENIDO
-- 50 carpetas de invitaciones personalizadas, cada una con su index.html.
-- Carpeta assets con la fotografía y el audio utilizados por las invitaciones.
-- index.html: página de bienvenida general.
-- 404.html: página para enlaces no encontrados.
+ESTRUCTURA
+- index.html está en la raíz del repositorio.
+- Cada invitación personalizada está dentro de una carpeta con el nombre del invitado.
+- Cada carpeta contiene su propio index.html.
+- assets contiene la fotografía y la música de la invitación.
+- 404.html es la página de error personalizada.
 
-PUBLICACIÓN EN GITHUB PAGES
-1. Descarga y descomprime este ZIP.
-2. En GitHub crea un repositorio, por ejemplo: xv-gabriela.
-3. Entra al repositorio y selecciona Add file > Upload files.
-4. Sube TODO el contenido que está dentro de esta carpeta (no subas únicamente el ZIP).
-   Debes ver index.html, 404.html, assets/ y las 50 carpetas de códigos en la raíz.
-5. Confirma los cambios con Commit changes.
-6. Abre Settings > Pages.
-7. En Build and deployment selecciona Deploy from a branch.
-8. Elige la rama main y la carpeta /(root), y pulsa Save.
-9. Espera la publicación. GitHub mostrará la dirección del sitio, normalmente:
-   https://TU-USUARIO.github.io/xv-gabriela/
+PUBLICACIÓN
+1. En el repositorio Jatax81/xv-gabriela, abre Add file > Upload files.
+2. Sube el CONTENIDO de esta carpeta a la raíz del repositorio (no subas una carpeta contenedora).
+3. Si GitHub pregunta si debe reemplazar archivos existentes, confirma la actualización.
+4. Pulsa Commit changes.
+5. En Settings > Pages, conserva Deploy from a branch, main y /(root).
+6. Espera a que termine la publicación.
 
-ENLACES PERSONALIZADOS
-Cada invitación está en una carpeta con un código aleatorio. El enlace tendrá esta forma:
-https://TU-USUARIO.github.io/xv-gabriela/CODIGO/
-Sustituye TU-USUARIO por tu usuario real de GitHub, xv-gabriela por el nombre exacto
-si usaste otro repositorio, y CODIGO por el nombre de la carpeta asignada a cada invitado.
+ENLACES
+La dirección base es:
+https://jatax81.github.io/xv-gabriela/
+
+Ejemplo:
+https://jatax81.github.io/xv-gabriela/jorge-soliz/
 
 IMPORTANTE
-- No publiques el archivo Excel privado de control de invitados.
-- No cambies los nombres de las carpetas de códigos: romperías los enlaces personalizados.
-- El enlace no funciona como contraseña: quien lo reciba o reenvíe podrá abrir esa invitación.
-- La confirmación por WhatsApp abre un mensaje preparado; no almacena automáticamente
-  respuestas en una base de datos.
-- Los enlaces y el audio/fotografía se mantienen en el proyecto; no es necesario subir
-  archivos adicionales aparte de los incluidos aquí.
-- Esta versión es estática y está preparada para GitHub Pages; no necesita Netlify ni
-  configuración de compilación.
-
-COMPROBACIÓN
-Tras publicar, abre primero la página principal y luego prueba un enlace personalizado.
-Verifica también la reproducción de audio y el botón de confirmación por WhatsApp.
+- Los nombres de las carpetas forman parte de la URL. Se usan minúsculas, sin tildes y con guiones.
+- El archivo Control_Enlaces_Gabriela_GITHUB_PRIVADO.xlsx es privado: NO lo subas al repositorio público.
+- Las invitaciones son páginas públicas. Un enlace con nombre no es una contraseña ni impide que otra persona abra otra invitación si conoce su dirección.
+- Mantén una copia de respaldo del proyecto anterior antes de reemplazar archivos.
