@@ -276,6 +276,26 @@
   .guest-note{font-size:.78rem;color:#8c5f63;line-height:1.5;margin:15px 0 0}
   #guestName[readonly]{opacity:.85;cursor:default}
 
+
+  /* ---- Detalle de cariño y datos para obsequios ---- */
+  .gift-note { max-width: 680px; margin: 0 auto 18px; }
+  .gift-note .gift-intro { max-width: 560px; margin: 0 auto 20px; line-height: 1.7; }
+  .gift-details { width: min(100%, 460px); margin: 22px auto; padding: 20px 22px;
+    border: 1px solid rgba(184,138,74,.42); border-radius: 16px;
+    background: linear-gradient(145deg, #fffaf5, #f9eceb); text-align: left; }
+  .gift-details h3 { margin: 0 0 14px; text-align: center; color: var(--gold-dark);
+    font-size: 1.25rem; font-weight: 600; }
+  .gift-row { display: flex; justify-content: space-between; gap: 14px;
+    padding: 9px 0; border-bottom: 1px solid rgba(184,138,74,.2); line-height: 1.4; }
+  .gift-row:last-child { border-bottom: 0; }
+  .gift-row span { color: var(--muted); }
+  .gift-row strong { color: var(--gold-dark); font-weight: 600; text-align: right; overflow-wrap: anywhere; }
+  .gift-thanks { max-width: 540px; margin: 18px auto 0; line-height: 1.7; font-style: italic; }
+  @media (max-width: 420px) {
+    .gift-details { padding: 17px 15px; }
+    .gift-row { gap: 8px; font-size: .98rem; }
+  }
+
 </style>
 </head>
 <body class="envelope-locked">
@@ -407,6 +427,27 @@
       <p class="tiny" id="copyHint">Copia el mensaje y envíalo a la familia de Gabriela.</p>
       <button class="secondary-btn" id="copyMessage" type="button">Copiar mensaje</button>
     </div>
+  </section>
+
+
+  <section class="section gift-note" id="detalle-carino">
+    <div class="section-kicker">Un gesto especial</div>
+    <h2>Un detalle de cariño</h2>
+    <div class="ornament">✧ ♡ ✧</div>
+    <p class="dedication gift-intro">
+      Tu presencia es nuestro mejor regalo. Si deseas hacernos llegar un obsequio,
+      puedes hacerlo mediante un sobre cerrado o una transferencia bancaria.
+    </p>
+    <div class="gift-details">
+      <h3>Datos para transferencia</h3>
+      <div class="gift-row"><span>Banco</span><strong>Pichincha</strong></div>
+      <div class="gift-row"><span>Tipo de cuenta</span><strong>Cuenta Transaccional</strong></div>
+      <div class="gift-row"><span>Número</span><strong>2216748942</strong></div>
+      <div class="gift-row"><span>Titular</span><strong>Fernanda Rodriguez</strong></div>
+    </div>
+    <p class="dedication gift-thanks">
+      Gracias por acompañarnos en este momento tan especial.
+    </p>
   </section>
 
   <footer>
