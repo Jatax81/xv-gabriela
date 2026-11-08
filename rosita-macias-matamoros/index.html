@@ -337,7 +337,7 @@
     <h2>Tu lugar está reservado</h2>
     <div class="guest-personal-card" aria-label="Datos de invitación personal">
       <p class="guest-kicker">INVITACIÓN PERSONALIZADA PARA</p>
-      <h2 id="assignedGuest">Sra. Rosita Macias Matamoros</h2>
+      <h2 id="assignedGuest">ROSITA MACIAS MATAMOROS</h2>
       <div class="guest-data-grid">
         <div><span class="guest-number">1</span><span class="guest-label">PASES ASIGNADOS</span></div>
         <div><span class="guest-number">04</span><span class="guest-label">MESA</span></div>
@@ -359,7 +359,8 @@
     <div class="event-details">
       <p><strong>Sábado, 5 de diciembre de 2026</strong><br>Recepción a las <strong>18:00</strong></p>
       <p><strong>Hotel Mapale San Carlos</strong><br>Tonsupa, Ecuador</p>
-      <div class="actions"><a class="gold-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Mapale+San+Carlos+Tonsupa+Ecuador" target="_blank" rel="noopener">Cómo llegar ↗</a>
+      <div class="actions"><a class="gold-btn" href="../assets/ubicacion-mapale.mp4" target="_blank" rel="noopener">Cómo llegar al local · Ver video ▶</a>
+      <a class="secondary-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Mapale+San+Carlos+Tonsupa+Ecuador" target="_blank" rel="noopener">Abrir ubicación en Maps ↗</a>
       <a class="secondary-btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Mis+XV+de+Gabriela+Liseth&amp;dates=20261205T230000Z/20261206T040000Z&amp;location=Hotel+Mapale+San+Carlos,+Tonsupa,+Ecuador" target="_blank" rel="noopener">Agregar al calendario</a></div>
     </div>
   </section>
@@ -389,14 +390,14 @@
     
     <form id="rsvpForm">
       <label for="guestName">Nombre de la invitación</label>
-      <input id="guestName" name="guestName" value="Sra. Rosita Macias Matamoros" readonly>
+      <input id="guestName" name="guestName" value="ROSITA MACIAS MATAMOROS" readonly>
       <label for="attendance">¿Podrás acompañarnos?</label>
       <select id="attendance" name="attendance" required>
         <option value="Sí asistiré">Sí, asistiré</option>
         <option value="No podré asistir">No podré asistir</option>
       </select>
-      <label for="guestCount">¿Cuántas personas asistirán? (máximo 1)</label>
-      <select id="guestCount" name="guestCount"><option value="1" selected>1 persona(s)</option></select>
+      <label for="guestCount">¿Cuántas personas asistirán? (máximo 3)</label>
+      <select id="guestCount" name="guestCount"><option value="1">1 persona(s)</option><option value="2">2 persona(s)</option><option value="3" selected>3 persona(s)</option></select>
       <div class="form-actions"><button class="gold-btn" type="submit">Preparar confirmación</button></div>
     </form>
     <div class="result" id="rsvpResult" role="status" aria-live="polite">
@@ -489,8 +490,8 @@
   document.querySelectorAll(".section").forEach(s => io.observe(s));
   const att = document.getElementById("attendance"), cnt = document.getElementById("guestCount");
   att.addEventListener("change", () => { cnt.disabled = att.value !== "Sí asistiré"; });
-  const MAX_PASSES = 1;
-  const TABLE_NO = "04";
+  const MAX_PASSES = 3;
+  const TABLE_NO = "01";
   let preparedMessage = "";
   document.getElementById("rsvpForm").addEventListener("submit", event => {
     event.preventDefault();

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Te invito a celebrar mis quince años · 5 de diciembre de 2026 · Hotel Mapale San Carlos, Tonsupa.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Pinyon+Script&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#f7e6e7">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Mis XV · Gabriela Liseth | Invitación</title>
+<style>
+  :root {
+    --rose: #f4dfe2;
+    --rose-deep: #d9a7ae;
+    --cream: #fffaf5;
+    --gold: #b88a4a;
+    --gold-dark: #805b2d;
+    --ink: #49352f;
+    --muted: #806d67;
+    --line: rgba(184,138,74,.55);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    color: var(--ink);
+    background: linear-gradient(180deg, #f8e8e9, #fffaf5 46%, #f4e0e2);
+    font-family: Georgia, "Times New Roman", serif;
+  }
+  button, input, select { font: inherit; }
+  button, a { -webkit-tap-highlight-color: transparent; }
+  .page { width: min(100%, 1120px); margin: 0 auto; padding: 28px clamp(18px, 4vw, 56px) 64px; }
+  .hero {
+    min-height: 88vh; position: relative; overflow: hidden; isolation: isolate;
+    display: flex; flex-direction: column; justify-content: space-between; align-items: center;
+    text-align: center; padding: 26px 22px 30px; border: 1px solid var(--line);
+    border-radius: 240px 240px 22px 22px;
+    background:
+      radial-gradient(ellipse at 50% 15%, rgba(255,255,255,.9), transparent 48%),
+      radial-gradient(ellipse at 0% 40%, rgba(214,155,165,.35), transparent 36%),
+      radial-gradient(ellipse at 100% 62%, rgba(184,138,74,.16), transparent 35%),
+      linear-gradient(160deg, #f5dfe2, #fff9f4 55%, #efd4d8);
+    box-shadow: 0 18px 55px rgba(120,77,72,.13);
+  }
+  .hero:before, .hero:after {
+    content: "✧  ❀  ✧"; position: absolute; color: var(--gold); opacity: .72;
+    font-size: clamp(25px, 6vw, 44px); letter-spacing: .2em; z-index: -1;
+  }
+  .hero:before { top: 9%; left: -5%; transform: rotate(-24deg); }
+  .hero:after { bottom: 16%; right: -7%; transform: rotate(22deg); }
+  .eyebrow { text-transform: uppercase; letter-spacing: .24em; font-size: .72rem; color: var(--gold-dark); }
+  .crown { font-size: 2.5rem; color: var(--gold); line-height: 1; margin-top: 10px; }
+  .portrait {
+    width: min(68vw, 310px); aspect-ratio: 3 / 4; margin: 20px auto 12px;
+    border: 5px solid rgba(255,255,255,.9); outline: 1px solid var(--line);
+    border-radius: 48% 48% 12px 12px; overflow: hidden; position: relative;
+    padding: 0; background: #f4dfe2; box-shadow: 0 12px 32px rgba(116,70,73,.18);
+  }
+  .portrait img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center top; }
+  .portrait:after { content: "✧"; position: absolute; bottom: 10px; right: 14px; color: #fff6d9; font-size: 1.8rem; text-shadow: 0 0 12px #bd8b45; }
+  h1 { font-size: clamp(2.5rem, 9vw, 4.9rem); font-weight: 400; line-height: .95; margin: 12px 0 8px; color: var(--gold-dark); }
+  .surname { letter-spacing: .25em; text-transform: uppercase; font-size: .78rem; margin: 10px 0 20px; }
+  .subtitle { font-style: italic; font-size: 1.2rem; color: #8c5f63; }
+  .date-line { margin-top: 18px; letter-spacing: .12em; text-transform: uppercase; font-size: .83rem; }
+  .open-btn, .gold-btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 13px 22px; border: 1px solid var(--gold); border-radius: 999px;
+    color: #fffaf5; background: linear-gradient(135deg, #c79b5b, #9c713b);
+    text-decoration: none; cursor: pointer; box-shadow: 0 7px 18px rgba(128,91,45,.18);
+  }
+  .open-btn { margin-top: 18px; }
+  .music-note { color: var(--muted); font: 12px/1.4 Arial, sans-serif; margin-top: 9px; }
+  .section {
+    margin: 20px 0; padding: 30px 23px; border: 1px solid var(--line); border-radius: 22px;
+    background: rgba(255,250,245,.84); text-align: center; box-shadow: 0 10px 28px rgba(120,77,72,.07);
+  }
+  .section-kicker { color: var(--gold-dark); text-transform: uppercase; letter-spacing: .2em; font-size: .7rem; }
+  h2 { font-size: clamp(1.7rem, 6vw, 2.4rem); font-weight: 400; color: var(--gold-dark); margin: 10px 0 16px; }
+  .ornament { color: var(--gold); letter-spacing: .4em; margin: 12px 0; }
+  .dedication { font-size: 1.08rem; line-height: 1.75; max-width: 540px; margin: 0 auto; }
+  .parents { margin-top: 22px; line-height: 1.7; }
+  .parents strong { display: block; color: var(--gold-dark); font-weight: 400; }
+  .countdown { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; max-width: 440px; margin: 22px auto 10px; }
+  .timebox { padding: 12px 4px; background: #f7e6e7; border: 1px solid rgba(184,138,74,.32); border-radius: 12px; }
+  .timebox b { display: block; color: var(--gold-dark); font-size: clamp(1.35rem, 5vw, 2rem); font-weight: 400; }
+  .timebox span { font: 10px Arial, sans-serif; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+  .event-details { line-height: 1.8; }
+  .event-details strong { color: var(--gold-dark); font-weight: 400; }
+  .map-link { color: var(--gold-dark); text-underline-offset: 4px; }
+  .schedule { list-style: none; padding: 0; margin: 22px auto 0; max-width: 420px; text-align: left; }
+  .schedule li { display: flex; gap: 12px; align-items: baseline; padding: 11px 0; border-bottom: 1px solid rgba(184,138,74,.22); }
+  .schedule li span { color: var(--gold); font-size: 1.1rem; }
+  .dress { display: inline-block; border: 1px solid var(--line); border-radius: 999px; padding: 10px 18px; margin-top: 8px; color: var(--gold-dark); background: #fff7f3; }
+  form { max-width: 460px; margin: 0 auto; text-align: left; }
+  label { display: block; margin: 13px 0 6px; font: 12px Arial, sans-serif; letter-spacing: .04em; color: var(--muted); }
+  input, select { width: 100%; border: 1px solid #d8b9a6; border-radius: 10px; padding: 12px; background: #fffdfb; color: var(--ink); }
+  .form-actions { text-align: center; margin-top: 18px; }
+  .result { display: none; margin-top: 18px; padding: 14px; border-radius: 12px; background: #f7e6e7; line-height: 1.55; overflow-wrap: anywhere; }
+  .result.show { display: block; }
+  .secondary-btn { border: 1px solid var(--gold); background: transparent; color: var(--gold-dark); border-radius: 999px; padding: 10px 15px; cursor: pointer; margin-top: 10px; }
+  footer { text-align: center; padding: 18px 10px 6px; color: #8c7068; font-style: italic; }
+  .tiny { font: 11px/1.5 Arial, sans-serif; color: var(--muted); }
+
+
+  body.envelope-locked { overflow: hidden; }
+  .envelope-screen { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; padding: 22px;
+    background: radial-gradient(ellipse at 50% 20%, rgba(255,255,255,.92), transparent 48%),
+      linear-gradient(145deg, #f6dfe4, #fff8f2 55%, #ecd0d8); transition: opacity .7s ease, visibility .7s ease; }
+  .envelope-screen.dismissed { opacity: 0; visibility: hidden; pointer-events: none; }
+  .envelope-wrap { width: min(90vw, 440px); text-align: center; }
+  .envelope-heading { color: var(--gold-dark); letter-spacing: .18em; text-transform: uppercase; font-size: .72rem; margin-bottom: 22px; }
+  .envelope { height: 250px; position: relative; cursor: pointer; perspective: 900px; filter: drop-shadow(0 15px 25px rgba(107,66,75,.18)); }
+  .envelope-back { position: absolute; inset: 18px 0 0; background: #e8c4cd; border: 1px solid #c89b78; border-radius: 8px; }
+  .envelope-paper { position: absolute; left: 8%; right: 8%; top: 24px; height: 190px; padding: 22px 12px; background: #fffaf5; border: 1px solid #dfc7a4;
+    color: var(--gold-dark); display: flex; flex-direction: column; align-items: center; justify-content: center; transition: transform .9s ease; }
+  .envelope-paper .mini-title { font-size: 1.8rem; line-height: 1.1; margin: 9px 0; }
+  .envelope-front { position: absolute; inset: 18px 0 0; border-radius: 8px; background: #eecfd6; clip-path: polygon(0 0, 50% 58%, 100% 0, 100% 100%, 0 100%); border: 1px solid #c89b78; }
+  .envelope-flap { position: absolute; inset: 18px 0 auto; height: 62%; background: #f5dce1; clip-path: polygon(0 0, 100% 0, 50% 100%); transform-origin: top center; transition: transform .75s ease; border-top: 1px solid #c89b78; }
+  .wax-seal { position: absolute; left: 50%; top: 56%; transform: translate(-50%,-50%); width: 54px; height: 54px; border-radius: 50%; display: grid; place-items: center;
+    color: #fff8e8; font-size: 1.55rem; background: radial-gradient(circle at 35% 30%, #d8b16d, #9b6c36); border: 2px solid #f6e2b8; transition: opacity .3s ease; }
+  .envelope-screen.opening .envelope-flap { transform: rotateX(180deg); }
+  .envelope-screen.opening .envelope-paper { transform: translateY(-92px); }
+  .envelope-screen.opening .wax-seal { opacity: 0; }
+  .envelope-cta { margin-top: 22px; border: 1px solid var(--gold); border-radius: 999px; background: linear-gradient(135deg,#c79b5b,#9c713b); color: white; padding: 13px 23px; cursor: pointer; }
+  .envelope-hint { color: var(--muted); font: 12px Arial,sans-serif; margin-top: 12px; }
+  .music-control { position: fixed; z-index: 10; right: 14px; bottom: 14px; border: 1px solid var(--gold); background: rgba(255,250,245,.94); color: var(--gold-dark); border-radius: 999px; padding: 10px 14px; box-shadow: 0 5px 16px rgba(90,50,50,.14); cursor: pointer; }
+  @media (prefers-reduced-motion: reduce) { .envelope-screen, .envelope-flap, .envelope-paper { transition: none !important; } }
+
+  .butterfly { position: fixed; z-index: 5; pointer-events: none; opacity: .82;
+    filter: drop-shadow(0 2px 4px rgba(120,70,120,.18)); animation: flutter 7s ease-in-out infinite;
+    font-size: clamp(22px, 5vw, 36px); }
+  .butterfly.b1 { top: 12%; left: max(3%, calc((100vw - 760px)/2 + 10px)); animation-delay: -1s; }
+  .butterfly.b2 { top: 31%; right: max(3%, calc((100vw - 760px)/2 + 8px)); animation-delay: -3.5s; font-size: clamp(20px, 4vw, 30px); }
+  .butterfly.b3 { top: 62%; left: max(4%, calc((100vw - 760px)/2 + 5px)); animation-delay: -5s; font-size: clamp(18px, 3.5vw, 27px); }
+  .butterfly.b4 { top: 82%; right: max(5%, calc((100vw - 760px)/2 + 15px)); animation-delay: -2s; }
+  @keyframes flutter {
+    0%, 100% { transform: translate3d(0,0,0) rotate(-9deg) scale(.94); }
+    25% { transform: translate3d(9px,-13px,0) rotate(8deg) scale(1.04); }
+    50% { transform: translate3d(-5px,-23px,0) rotate(-4deg) scale(.98); }
+    75% { transform: translate3d(7px,-9px,0) rotate(10deg) scale(1.03); }
+  }
+  @media (prefers-reduced-motion: reduce) { .butterfly, .hero, .section { animation: none !important; } }
+
+  @media (min-width: 650px) {
+    .page { padding: 26px 24px 50px; }
+    .hero { min-height: 820px; }
+    .section { padding: 42px 42px; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .hero, .section { animation: fadeUp .9s ease both; }
+    .section:nth-of-type(odd) { animation-delay: .08s; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+  }
+
+  /* ---- Mejoras de diseño ---- */
+  html { color-scheme: light; }
+  body { font-family: "Cormorant Garamond", Georgia, serif; font-size: 19px; }
+  :root { --muted: #6f5d57; }
+  .page { padding-top: max(18px, env(safe-area-inset-top)); padding-bottom: max(42px, env(safe-area-inset-bottom)); }
+  h1 { font-family: "Pinyon Script", "Brush Script MT", cursive; font-style: normal; font-size: clamp(3.4rem, 15vw, 6.4rem); line-height: 1.02; letter-spacing: 0; }
+  h2 { font-weight: 500; }
+  .eyebrow, .section-kicker, .date-line, .surname { font-weight: 600; }
+  .eyebrow { font-size: .8rem; }
+  .section-kicker { font-size: .8rem; }
+  .subtitle { font-size: 1.35rem; }
+  .tiny, .music-note, label, .envelope-hint { font-family: "Cormorant Garamond", Georgia, serif; font-size: .95rem; }
+  .timebox span { font-family: "Cormorant Garamond", Georgia, serif; font-size: .8rem; font-weight: 600; }
+  .hero-place { margin: 6px 0 0; font-size: 1.15rem; font-style: italic; color: #8c5f63; }
+  .open-btn, .gold-btn { font-family: inherit; font-size: 1.05rem; letter-spacing: .04em; min-height: 46px; }
+  .secondary-btn { font-family: inherit; font-size: 1.05rem; min-height: 46px; display: inline-flex; align-items: center; text-decoration: none; padding: 10px 20px; margin-top: 0; }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 18px; }
+  .music-control { font-family: inherit; font-size: 1rem; bottom: max(14px, env(safe-area-inset-bottom)); }
+  .butterfly { z-index: 1; width: clamp(30px, 7vw, 48px); height: auto; font-size: 0; opacity: .75; }
+  .page { position: relative; z-index: 2; }
+  .schedule li { justify-content: flex-start; align-items: flex-start; text-align: left; gap: 16px; font-size: 1.08rem; }
+  .schedule li > span { flex: 0 0 58px; color: var(--gold-dark); font-weight: 600; letter-spacing: .04em; padding-top: 2px; }
+  .schedule li > div { flex: 1; line-height: 1.35; }
+  .schedule li strong { color: var(--gold-dark); font-weight: 600; }
+  .schedule li small { display: inline-block; margin-top: 4px; color: var(--muted); font-size: .92rem; line-height: 1.35; }
+  .schedule li span { font-size: .9rem; }
+  input, select { font-size: 1rem; min-height: 46px; }
+  [hidden] { display: none !important; }
+  .result .gold-btn { margin-top: 6px; }
+  @media (prefers-reduced-motion: no-preference) {
+    .section { animation: none; }
+    .js-ready .section { opacity: 0; transform: translateY(18px); transition: opacity .8s ease, transform .8s ease; }
+    .js-ready .section.in { opacity: 1; transform: none; }
+  }
+
+  /* ---- Sobre: animación en etapas ---- */
+  .envelope-screen { transition: opacity .9s ease, visibility .9s ease; }
+  .envelope { margin-top: 80px; }
+  .envelope-back { z-index: 0; } .envelope-paper { z-index: 2; } .envelope-front { z-index: 3; } .envelope-flap { z-index: 4; } .wax-seal { z-index: 5; }
+  .envelope-screen.opening .envelope-flap { animation: flapOpen 1s ease forwards; transition: none; }
+  @keyframes flapOpen {
+    0% { transform: rotateX(0); z-index: 4; } 49% { z-index: 4; }
+    50% { transform: rotateX(90deg); z-index: 0; } 100% { transform: rotateX(180deg); z-index: 0; }
+  }
+  .envelope-screen.opening .envelope-paper { transform: translateY(-150px); transition: transform 1.1s cubic-bezier(.3,.8,.3,1) .75s; }
+  .envelope-screen.opening .envelope-hint, .envelope-screen.opening .envelope-cta { opacity: 0; transition: opacity .4s ease; }
+  .envelope-screen.leaving { opacity: 0; }
+  .envelope-screen.leaving .envelope-wrap { transform: scale(1.18); opacity: 0; transition: transform .9s ease, opacity .8s ease; }
+  @media (prefers-reduced-motion: reduce) { .envelope-screen.opening .envelope-flap { animation: none; transform: rotateX(180deg); z-index: 0; } }
+
+  /* ---- Pulido visual v3 ---- */
+  :root { --gold-grad: linear-gradient(135deg,#7d5527,#d6ab62 45%,#8a6130 80%,#c79b5b); }
+  body { background:
+      radial-gradient(rgba(184,138,74,.16) 1px, transparent 1.4px) 0 0/26px 26px,
+      radial-gradient(circle at 10% 6%, rgba(214,155,165,.32), transparent 30%),
+      radial-gradient(circle at 92% 50%, rgba(184,138,74,.16), transparent 32%),
+      radial-gradient(circle at 8% 94%, rgba(214,155,165,.28), transparent 30%),
+      linear-gradient(180deg,#f8e8e9,#fffaf5 46%,#f4e0e2); background-attachment: fixed; }
+  .hero { box-shadow: 0 24px 60px rgba(120,77,72,.17), inset 0 0 0 7px rgba(255,250,245,.75), inset 0 0 0 8px rgba(184,138,74,.4); }
+  .portrait { outline: none; border-width: 6px; box-shadow: 0 0 0 10px rgba(255,255,255,.5), 0 0 0 11px rgba(184,138,74,.55), 0 22px 48px rgba(116,70,73,.28); }
+  h1, .section h2 { background: var(--gold-grad); -webkit-background-clip: text; background-clip: text; color: transparent; padding: .08em .1em; }
+  h1 { filter: drop-shadow(0 3px 6px rgba(128,91,45,.2)); }
+  .crown { background: var(--gold-grad); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.8rem; }
+  .hero-place { font-size: 1.25rem; }
+  .section { position: relative; background: linear-gradient(180deg, rgba(255,252,248,.92), rgba(251,238,238,.88)); box-shadow: 0 14px 34px rgba(120,77,72,.1); }
+  .section:before { content: ""; position: absolute; inset: 8px; border: 1px solid rgba(184,138,74,.32); border-radius: 15px; pointer-events: none; }
+  .section:after { content: "❦"; position: absolute; top: -15px; left: 50%; transform: translateX(-50%); padding: 0 14px; color: var(--gold); font-size: 1.3rem; line-height: 1.3;
+    background: linear-gradient(180deg, transparent 45%, #fdf3f1 46%); }
+  .section-kicker { display: flex; align-items: center; justify-content: center; gap: 12px; font-size: .85rem; }
+  .section-kicker:before, .section-kicker:after { content: ""; height: 1px; width: 38px; background: linear-gradient(90deg, transparent, var(--gold)); }
+  .section-kicker:after { transform: scaleX(-1); }
+  .ornament { display: flex; align-items: center; justify-content: center; gap: 10px; letter-spacing: .3em; }
+  .dedication { font-size: 1.22rem; font-style: italic; }
+  .timebox { background: linear-gradient(180deg,#fffaf5,#f6dfe2); border-radius: 14px; box-shadow: 0 8px 18px rgba(120,77,72,.12), inset 0 0 0 3px rgba(255,255,255,.75); }
+  .timebox b { font-weight: 600; font-size: clamp(1.7rem, 7vw, 2.4rem); background: var(--gold-grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .schedule li { position: relative; border-bottom: 0; padding: 15px 0; }
+  .schedule li + li:before { content: ""; position: absolute; top: -8px; left: 29px; height: 16px; width: 1px; background: linear-gradient(var(--gold), transparent); }
+  .dress { background: linear-gradient(180deg,#fffaf5,#f9e8e8); box-shadow: 0 6px 14px rgba(120,77,72,.08); }
+  input, select { border-color: rgba(184,138,74,.45); box-shadow: inset 0 1px 3px rgba(120,77,72,.06); }
+  input:focus, select:focus { outline: 2px solid rgba(199,155,91,.55); outline-offset: 1px; }
+  footer { font-family: "Pinyon Script", cursive; font-style: normal; font-size: 1.7rem; color: var(--gold-dark); }
+  .open-btn, .gold-btn, .envelope-cta { position: relative; overflow: hidden; background: var(--gold-grad); border-color: #e3c690; text-shadow: 0 1px 2px rgba(80,50,20,.35); }
+  .open-btn:after, .gold-btn:after, .envelope-cta:after { content: ""; position: absolute; top: 0; left: -60%; width: 40%; height: 100%;
+    background: linear-gradient(100deg, transparent, rgba(255,255,255,.5), transparent); transform: skewX(-20deg); animation: sheen 4s ease-in-out infinite; }
+  @keyframes sheen { 0%, 55% { left: -60%; } 100% { left: 130%; } }
+  .sparkle { position: absolute; z-index: 0; color: #c79b5b; pointer-events: none; animation: twinkle 3.4s ease-in-out infinite; }
+  @keyframes twinkle { 0%, 100% { opacity: .1; transform: scale(.55); } 50% { opacity: .95; transform: scale(1.2); } }
+  /* sobre */
+  .envelope-screen { background: radial-gradient(circle at 50% 15%, rgba(255,255,255,.95), transparent 45%), radial-gradient(rgba(184,138,74,.16) 1px, transparent 1.4px) 0 0/24px 24px, linear-gradient(145deg,#f4d6dd,#fff8f2 52%,#e8c6d0); }
+  .envelope-heading { font-size: .85rem; }
+  .envelope { filter: drop-shadow(0 22px 28px rgba(107,66,75,.28)); }
+  .envelope-back { background: linear-gradient(180deg,#c98f9b,#e2b3bd); }
+  .envelope-front { background: linear-gradient(160deg,#f6dde2,#e4b6c1); }
+  .envelope-flap { background: linear-gradient(180deg,#fae8eb,#efc5ce); }
+  .envelope-paper { background: linear-gradient(180deg,#fffdf9,#fbf1e6); outline: 1px solid rgba(184,138,74,.45); outline-offset: -7px; box-shadow: 0 -3px 12px rgba(120,77,72,.1); }
+  .wax-seal { font-family: "Pinyon Script", cursive; font-size: 2rem; box-shadow: 0 4px 10px rgba(80,40,20,.35), inset 0 0 0 3px rgba(120,80,30,.35); animation: pulse 2.4s ease-out infinite; }
+  .envelope-screen.opening .wax-seal { animation: none; }
+  @keyframes pulse { 0% { box-shadow: 0 4px 10px rgba(80,40,20,.35), 0 0 0 0 rgba(199,155,91,.6); } 70%, 100% { box-shadow: 0 4px 10px rgba(80,40,20,.35), 0 0 0 20px rgba(199,155,91,0); } }
+  @media (prefers-reduced-motion: reduce) { .sparkle, .open-btn:after, .gold-btn:after, .envelope-cta:after, .wax-seal { animation: none !important; } .sparkle { opacity: .5; } }
+
+  /* Presentación como página web, sin marco de teléfono */
+  @media (min-width: 800px) {
+    .page { padding-top: 42px; }
+    .hero { min-height: min(820px, 88vh); padding: 48px 56px 46px; border-radius: 280px 280px 28px 28px; }
+    .hero h1 { font-size: clamp(4rem, 7vw, 6.8rem); }
+    .hero .portrait, .hero img { max-width: min(340px, 32vw); }
+    section, .section { margin-left: auto; margin-right: auto; }
+  }
+  @media (min-width: 1200px) {
+    .page { padding-left: 72px; padding-right: 72px; }
+  }
+
+
+  .guest-personal-card{margin:28px auto;padding:24px 20px;max-width:520px;text-align:center;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,rgba(255,250,245,.96),rgba(246,226,225,.9));box-shadow:0 12px 30px rgba(120,77,72,.10)}
+  .guest-kicker{font-size:.68rem;letter-spacing:.2em;color:var(--gold-dark);margin:0 0 9px}
+  .guest-personal-card h2{font-family:inherit;font-weight:400;font-size:clamp(1.25rem,4vw,1.8rem);line-height:1.25;color:var(--gold-dark);margin:0 0 20px}
+  .guest-data-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .guest-data-grid>div{background:rgba(255,255,255,.72);border:1px solid var(--line);border-radius:14px;padding:14px 8px;display:flex;flex-direction:column;gap:4px}
+  .guest-number{font-size:2rem;color:var(--gold-dark);line-height:1.1}
+  .guest-label{font-size:.65rem;letter-spacing:.12em;color:#8c5f63}
+  .guest-note{font-size:.78rem;color:#8c5f63;line-height:1.5;margin:15px 0 0}
+  #guestName[readonly]{opacity:.85;cursor:default}
+
+</style>
+</head>
+<body class="envelope-locked">
+<audio id="bgm" loop preload="auto" src="../assets/musica.m4a"></audio>
+<div class="envelope-screen" id="envelopeScreen">
+  <div class="envelope-wrap">
+    <div class="envelope-heading">Una invitación especial para ti</div>
+    <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Abrir sobre de invitación">
+      <div class="envelope-back"></div>
+      <div class="envelope-paper"><div class="section-kicker">Mis quince años</div><div class="mini-title">Gabriela Liseth</div><div class="ornament">✧ ♡ ✧</div><div class="tiny">5 de diciembre de 2026 · 18:00</div></div>
+      <div class="envelope-front"></div><div class="envelope-flap"></div><div class="wax-seal">G</div>
+    </div>
+    <button class="envelope-cta" id="openEnvelope" type="button">Abrir invitación ✧</button>
+    <div class="envelope-hint">Pulsa el sobre para descubrir todos los detalles.</div>
+  </div>
+</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="bf" viewBox="0 0 64 64"><g fill="#e3b8bf" stroke="#b88a4a" stroke-width="1.2"><path d="M32 30C22 8 4 10 6 26c1 9 14 12 26 4z"/><path d="M32 34C20 36 10 46 16 56c7 6 15-8 16-22z"/><path d="M32 30c10-22 28-20 26-4-1 9-14 12-26 4z"/><path d="M32 34c12 2 22 12 16 22-7 6-15-8-16-22z"/></g><path d="M32 22v26" stroke="#805b2d" stroke-width="2" stroke-linecap="round"/></symbol></svg>
+<svg class="butterfly b1" viewBox="0 0 64 64" aria-hidden="true"><use href="#bf"/></svg>
+<svg class="butterfly b2" viewBox="0 0 64 64" aria-hidden="true"><use href="#bf"/></svg>
+<svg class="butterfly b3" viewBox="0 0 64 64" aria-hidden="true"><use href="#bf"/></svg>
+<main class="page">
+  <section class="hero" id="inicio">
+    <div>
+      <div class="eyebrow">Una celebración única</div>
+      <div class="crown" aria-hidden="true">♕</div>
+      <div class="portrait" aria-label="Fotografía de Gabriela Liseth">
+        <img src="../assets/gabriela.jpg" alt="Gabriela Liseth con vestido rosa de quinceañera y tiara">
+      </div>
+      <div class="subtitle">Mis quince años</div>
+      <h1>Gabriela<br>Liseth</h1>
+      <div class="surname">Macias Rodríguez</div>
+      <div class="ornament">— ♥ —</div>
+      <div class="eyebrow">Con la bendición de Dios y el amor de mi familia</div>
+    </div>
+    <div>
+      <p class="date-line">Sábado · 5 de diciembre · 2026</p>
+      <p class="hero-place">18:00 h · Hotel Mapale San Carlos, Tonsupa</p>
+      <a class="open-btn" href="#datos-invitacion">Ver detalles <span aria-hidden="true">↓</span></a>
+      <div class="music-note">Toca ♫ para activar o pausar la música.</div>
+    </div>
+  </section>
+
+  <section class="section" id="dedicatoria">
+    <div class="section-kicker">Un momento para recordar</div>
+    <h2>Con mucho cariño</h2>
+    <div class="ornament">✧ ❀ ✦ ❀ ✧</div>
+    <p class="dedication">Hay momentos que se guardan para siempre en el corazón, y hoy comienza uno de los capítulos más hermosos de mi vida. Me llena de alegría compartir mis quince años con las personas que forman parte de mi historia.</p>
+    <p class="dedication" style="margin-top:14px">Con mucha ilusión, te invito a celebrar conmigo este sueño hecho realidad.</p>
+    <div class="parents">
+      <div class="section-kicker">Con el amor de mis padres</div>
+      <strong>Eduardo Vinicio Macias Tamayo</strong>
+      <strong>María Fernanda Rodríguez Rodríguez</strong>
+    </div>
+  </section>
+
+
+  <section class="section" id="datos-invitacion">
+    <div class="section-kicker">Tu invitación personalizada</div>
+    <h2>Tu lugar está reservado</h2>
+    <div class="guest-personal-card" aria-label="Datos de invitación personal">
+      <p class="guest-kicker">INVITACIÓN PERSONALIZADA PARA</p>
+      <h2 id="assignedGuest">ALEJANDRO RAMIREZ Y SRA.</h2>
+      <div class="guest-data-grid">
+        <div><span class="guest-number">2</span><span class="guest-label">PASES ASIGNADOS</span></div>
+        <div><span class="guest-number">08</span><span class="guest-label">MESA</span></div>
+      </div>
+      <p class="guest-note">Esta invitación es personal. Los pases y la mesa han sido asignados por la familia.</p>
+    </div>
+  </section>
+
+  <section class="section" id="cuenta">
+    <div class="section-kicker">La cuenta regresiva</div>
+    <h2>¡Ya casi llega el gran día!</h2>
+    <div class="countdown" aria-label="Cuenta regresiva hasta el evento">
+      <div class="timebox"><b id="days">--</b><span>Días</span></div>
+      <div class="timebox"><b id="hours">--</b><span>Horas</span></div>
+      <div class="timebox"><b id="minutes">--</b><span>Minutos</span></div>
+      <div class="timebox"><b id="seconds">--</b><span>Segundos</span></div>
+    </div>
+    <div class="ornament">— ♡ —</div>
+    <div class="event-details">
+      <p><strong>Sábado, 5 de diciembre de 2026</strong><br>Recepción a las <strong>18:00</strong></p>
+      <p><strong>Hotel Mapale San Carlos</strong><br>Tonsupa, Ecuador</p>
+      <div class="actions"><a class="gold-btn" href="../assets/ubicacion-mapale.mp4" target="_blank" rel="noopener">Cómo llegar al local · Ver video ▶</a>
+      <a class="secondary-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Mapale+San+Carlos+Tonsupa+Ecuador" target="_blank" rel="noopener">Abrir ubicación en Maps ↗</a>
+      <a class="secondary-btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Mis+XV+de+Gabriela+Liseth&amp;dates=20261205T230000Z/20261206T040000Z&amp;location=Hotel+Mapale+San+Carlos,+Tonsupa,+Ecuador" target="_blank" rel="noopener">Agregar al calendario</a></div>
+    </div>
+  </section>
+
+  <section class="section" id="programa">
+    <div class="section-kicker">Una noche especial</div>
+    <h2>Programa de la celebración</h2>
+    <ul class="schedule">
+      <li><span>18:00</span><div><strong>Recepción de invitados</strong><br><small>Bienvenida y encuentro de familiares y amigos.</small></div></li>
+      <li><span>18:30</span><div><strong>La entrada de Gabriela</strong><br><small>Un momento especial que da inicio a la celebración.</small></div></li>
+      <li><span>19:00</span><div><strong>El vals de mis XV años</strong><br><small>Un instante lleno de emoción y recuerdos.</small></div></li>
+      <li><span>19:30</span><div><strong>Brindis de honor</strong><br><small>Palabras y buenos deseos para Gabriela.</small></div></li>
+      <li><span>20:00</span><div><strong>Baile sorpresa</strong><br><small>Una presentación especial preparada para esta noche.</small></div></li>
+      <li><span>20:30</span><div><strong>Cena de celebración</strong><br><small>Compartiremos una deliciosa cena en familia.</small></div></li>
+      <li><span>21:30</span><div><strong>Presentación del artista invitado</strong><br><small>Música y entretenimiento en vivo.</small></div></li>
+      <li><span>22:00</span><div><strong>¡Se abre la pista de baile!</strong><br><small>Comienza la fiesta para celebrar juntos.</small></div></li>
+    </ul>
+    <div class="ornament">❀</div>
+    <div class="section-kicker">Código de vestimenta</div>
+    <div class="dress">Formal elegante</div>
+  </section>
+
+  <section class="section" id="confirmar">
+    <div class="section-kicker">Nos encantaría contar contigo</div>
+    <h2>Confirma tu asistencia</h2>
+    <p class="dedication" style="font-size:1rem">Por favor, completa tus datos y el número total de personas que asistirán contigo.</p>
+    
+    <form id="rsvpForm">
+      <label for="guestName">Nombre de la invitación</label>
+      <input id="guestName" name="guestName" value="ALEJANDRO RAMIREZ Y SRA." readonly>
+      <label for="attendance">¿Podrás acompañarnos?</label>
+      <select id="attendance" name="attendance" required>
+        <option value="Sí asistiré">Sí, asistiré</option>
+        <option value="No podré asistir">No podré asistir</option>
+      </select>
+      <label for="guestCount">¿Cuántas personas asistirán? (máximo 3)</label>
+      <select id="guestCount" name="guestCount"><option value="1">1 persona(s)</option><option value="2">2 persona(s)</option><option value="3" selected>3 persona(s)</option></select>
+      <div class="form-actions"><button class="gold-btn" type="submit">Preparar confirmación</button></div>
+    </form>
+    <div class="result" id="rsvpResult" role="status" aria-live="polite">
+      <strong>Tu mensaje está preparado.</strong>
+      <p id="rsvpMessage"></p>
+      <a class="gold-btn" id="waLink" href="#" target="_blank" rel="noopener" hidden>Enviar por WhatsApp</a>
+      <p class="tiny" id="copyHint">Copia el mensaje y envíalo a la familia de Gabriela.</p>
+      <button class="secondary-btn" id="copyMessage" type="button">Copiar mensaje</button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="ornament">— ♥ —</div>
+    Tu presencia será el regalo más hermoso para mí.<br>
+    <strong style="font-weight:400;color:var(--gold-dark)">Con cariño, Gabriela Liseth</strong>
+  </footer>
+</main>
+<button class="music-control" id="musicControl" type="button" aria-pressed="false">♫ Música: activar</button>
+<script>
+  // Cuenta regresiva: Ecuador continental (UTC-5), 5 de diciembre de 2026 a las 18:00.
+  const targetDate = new Date("2026-12-05T18:00:00-05:00").getTime();
+  function updateCountdown() {
+    const diff = targetDate - Date.now();
+    if (diff <= 0) {
+      ["days","hours","minutes","seconds"].forEach(id => document.getElementById(id).textContent = "0");
+      return;
+    }
+    document.getElementById("days").textContent = Math.floor(diff / 86400000);
+    document.getElementById("hours").textContent = Math.floor((diff % 86400000) / 3600000);
+    document.getElementById("minutes").textContent = Math.floor((diff % 3600000) / 60000);
+    document.getElementById("seconds").textContent = Math.floor((diff % 60000) / 1000);
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  // Música: audio propio de la invitación (en bucle). Se activa tras un toque del invitado.
+  const bgm = document.getElementById("bgm"); bgm.volume = 0;
+  let musicOn = false;
+  let fadeTimer = null;
+  function fadeAudio(target, done) {
+    clearInterval(fadeTimer);
+    const start = bgm.volume, steps = 14, delta = (target - start) / steps;
+    let step = 0;
+    fadeTimer = setInterval(() => {
+      step++;
+      bgm.volume = Math.max(0, Math.min(0.7, start + delta * step));
+      if (step >= steps) { clearInterval(fadeTimer); if (done) done(); }
+    }, 45);
+  }
+  function paintMusic() {
+    const c = document.getElementById("musicControl");
+    c.textContent = musicOn ? "♫ Música: pausar" : "♫ Música: activar";
+    c.setAttribute("aria-pressed", String(musicOn));
+    document.querySelector(".music-note").textContent = musicOn ? "Música activada · puedes pausarla con el botón ♫." : "Toca ♫ para activar la música.";
+  }
+  async function toggleMusic() {
+    if (!musicOn) {
+      try { bgm.volume = 0; await bgm.play(); musicOn = true; fadeAudio(0.7); }
+      catch (e) { musicOn = false; }
+    } else { musicOn = false; fadeAudio(0, () => bgm.pause()); }
+    paintMusic();
+  }
+  document.getElementById("musicControl").addEventListener("click", toggleMusic);
+  async function openTheEnvelope() {
+    const cover = document.getElementById("envelopeScreen");
+    if (cover.classList.contains("opening") || cover.classList.contains("dismissed")) return;
+    cover.classList.add("opening");
+    try { if (!musicOn) await toggleMusic(); } catch (e) { /* la invitación sigue abriendo aunque el audio no esté disponible */ }
+    setTimeout(() => cover.classList.add("leaving"), 2100);
+    setTimeout(() => {
+      cover.classList.add("dismissed"); document.body.classList.remove("envelope-locked");
+      window.scrollTo({top:0, behavior:"smooth"});
+    }, 3000);
+  }
+  document.getElementById("openEnvelope").addEventListener("click", openTheEnvelope);
+  document.getElementById("envelope").addEventListener("click", openTheEnvelope);
+  document.getElementById("envelope").addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openTheEnvelope(); } });
+
+  // Número de WhatsApp de la familia con código de país, sin + ni espacios (ej. "593991234567").
+  const WHATSAPP = "593997046014";
+  document.body.classList.add("js-ready");
+  const heroEl = document.querySelector(".hero");
+  for (let i = 0; i < 16; i++) {
+    const sp = document.createElement("span"); sp.className = "sparkle"; sp.textContent = "✦"; sp.setAttribute("aria-hidden", "true");
+    sp.style.left = (4 + Math.random() * 92) + "%"; sp.style.top = (3 + Math.random() * 94) + "%";
+    sp.style.fontSize = (8 + Math.random() * 12) + "px"; sp.style.animationDelay = (-Math.random() * 3.4) + "s";
+    heroEl.appendChild(sp);
+  }
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: .12 });
+  document.querySelectorAll(".section").forEach(s => io.observe(s));
+  const att = document.getElementById("attendance"), cnt = document.getElementById("guestCount");
+  att.addEventListener("change", () => { cnt.disabled = att.value !== "Sí asistiré"; });
+  const MAX_PASSES = 3;
+  const TABLE_NO = "01";
+  let preparedMessage = "";
+  document.getElementById("rsvpForm").addEventListener("submit", event => {
+    event.preventDefault();
+    const name = document.getElementById("guestName").value.trim();
+    const attendance = document.getElementById("attendance").value;
+    const count = document.getElementById("guestCount").value;
+    preparedMessage = `Hola, soy ${name}. ${attendance} a los quince años de Gabriela Liseth, el sábado 5 de diciembre de 2026 a las 18:00 en el Hotel Mapale San Carlos, Tonsupa. Invitación asignada: ${MAX_PASSES} pase(s), mesa ${TABLE_NO}. ${attendance === "Sí asistiré" ? "Asistiremos " + count + " persona(s)." : "Gracias por la invitación."}`;
+    document.getElementById("rsvpMessage").textContent = preparedMessage;
+    document.getElementById("rsvpResult").classList.add("show");
+    const wa = document.getElementById("waLink");
+    if (WHATSAPP) { wa.href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(preparedMessage); wa.hidden = false; } else { wa.hidden = true; }
+  });
+  document.getElementById("copyMessage").addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(preparedMessage);
+      document.getElementById("copyMessage").textContent = "Mensaje copiado ✓";
+    } catch (e) {
+      const range = document.createRange();
+      range.selectNodeContents(document.getElementById("rsvpMessage"));
+      const selection = window.getSelection();
+      selection.removeAllRanges(); selection.addRange(range);
+      document.getElementById("copyMessage").textContent = "Selecciona y copia el texto";
+    }
+  });
+</script>
+</body>
+</html>
