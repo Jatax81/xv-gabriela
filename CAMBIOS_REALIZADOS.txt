@@ -1,0 +1,10 @@
+ACTUALIZACIÓN DEL PROYECTO · 10 NOVIEMBRE 2026
+
+- 55 invitaciones personalizadas verificadas contra el Excel recibido.
+- Total de pases asignados: 109.
+- 3 invitaciones nuevas: Ricardo Tabares, Maevelin Castillo y Camila Velazco.
+- Pedro Tamayo corregido a mesa 03.
+- Lema superior optimizado para lectura en móviles.
+- El Excel de control se mantiene fuera del proyecto público por privacidad.
+
+Para publicar: consultar README.md.

@@ -296,6 +296,23 @@
     .gift-row { gap: 8px; font-size: .98rem; }
   }
 
+
+  /* Legibilidad móvil: el lema del encabezado se adapta a pantallas estrechas */
+  .eyebrow {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding-inline: 8px;
+    font-size: clamp(.72rem, 3.2vw, .9rem);
+    line-height: 1.4;
+    letter-spacing: clamp(.06em, 1.1vw, .16em);
+    text-wrap: balance;
+    overflow-wrap: normal;
+  }
+  @media (max-width: 380px) {
+    .eyebrow { font-size: .72rem; letter-spacing: .055em; }
+  }
+
 </style>
 </head>
 <body class="envelope-locked">
@@ -360,7 +377,7 @@
       <h2 id="assignedGuest">PEDRO TAMAYO</h2>
       <div class="guest-data-grid">
         <div><span class="guest-number">1</span><span class="guest-label">PASES ASIGNADOS</span></div>
-        <div><span class="guest-number">04</span><span class="guest-label">MESA</span></div>
+        <div><span class="guest-number">03</span><span class="guest-label">MESA</span></div>
       </div>
       <p class="guest-note">Esta invitación es personal. Los pases y la mesa han sido asignados por la familia.</p>
     </div>
@@ -531,8 +548,8 @@
   document.querySelectorAll(".section").forEach(s => io.observe(s));
   const att = document.getElementById("attendance"), cnt = document.getElementById("guestCount");
   att.addEventListener("change", () => { cnt.disabled = att.value !== "Sí asistiré"; });
-  const MAX_PASSES = 3;
-  const TABLE_NO = "01";
+  const MAX_PASSES = 1;
+  const TABLE_NO = "03";
   let preparedMessage = "";
   document.getElementById("rsvpForm").addEventListener("submit", event => {
     event.preventDefault();
