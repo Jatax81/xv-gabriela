@@ -427,14 +427,14 @@
     
     <form id="rsvpForm">
       <label for="guestName">Nombre de la invitación</label>
-      <input id="guestName" name="guestName" value="BRIANA VALVERDE ROBLES" readonly>
+      <input id="guestName" name="guestName" value="CAMILA VELAZCO" readonly>
       <label for="attendance">¿Podrás acompañarnos?</label>
       <select id="attendance" name="attendance" required>
         <option value="Sí asistiré">Sí, asistiré</option>
         <option value="No podré asistir">No podré asistir</option>
       </select>
-      <label for="guestCount">¿Cuántas personas asistirán? (máximo 3)</label>
-      <select id="guestCount" name="guestCount"><option value="1">1 persona(s)</option><option value="2">2 persona(s)</option><option value="3" selected>3 persona(s)</option></select>
+      <label for="guestCount">¿Cuántas personas asistirán? (máximo 1, según tu pase)</label>
+      <select id="guestCount" name="guestCount"><option value="1" selected>1 persona</option></select>
       <div class="form-actions"><button class="gold-btn" type="submit">Preparar confirmación</button></div>
     </form>
     <div class="result" id="rsvpResult" role="status" aria-live="polite">

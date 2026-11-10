@@ -8,3 +8,5 @@ ACTUALIZACIÓN DEL PROYECTO · 10 NOVIEMBRE 2026
 - El Excel de control se mantiene fuera del proyecto público por privacidad.
 
 Para publicar: consultar README.md.
+
+ACTUALIZACIÓN CONFIRMACIÓN: En las 55 invitaciones, la cantidad de asistentes aparece por defecto igual a los pases asignados en el listado. Las opciones van de 1 hasta el máximo correspondiente a cada invitación. Se mantienen mesa, nombre, diseño y WhatsApp.

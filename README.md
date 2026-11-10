@@ -14,7 +14,7 @@ Proyecto estático preparado para publicarse con **GitHub Pages**.
 
 ## Invitaciones personalizadas
 
-- Se incluyen **55 invitaciones**, una por familia o invitado.
+- Se incluyen **56 invitaciones**, una por familia o invitado.
 - Cada invitación está dentro de una carpeta con su propio `index.html`.
 - El enlace se construye con la URL publicada + el nombre de la carpeta. Ejemplo: `https://USUARIO.github.io/REPOSITORIO/ricardo-tabares/`.
 - Los pases y la mesa están sincronizados con el archivo Excel de invitados proporcionado.
@@ -37,3 +37,7 @@ Proyecto estático preparado para publicarse con **GitHub Pages**.
 ## Privacidad
 
 El repositorio de GitHub Pages puede ser público. Los nombres, pases, mesas y enlaces personalizados son datos visibles para quien tenga o encuentre la URL. No subas el Excel privado de control al repositorio. Los enlaces personalizados no son contraseñas ni controles de acceso.
+
+## Última actualización del listado
+
+Datos de invitados, pases, mesas y confirmación sincronizados con el último Excel proporcionado. La confirmación selecciona por defecto el total de pases asignados.
