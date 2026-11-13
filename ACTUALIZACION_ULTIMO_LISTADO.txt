@@ -1,0 +1,4 @@
+Actualización basada en INVITADOS GABBY1(3).xlsx
+Total invitaciones: 58
+Cada pase, mesa y confirmación corresponde al listado más reciente.
+No publicar el Excel privado en GitHub Pages.

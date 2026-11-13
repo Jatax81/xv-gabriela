@@ -276,6 +276,43 @@
   .guest-note{font-size:.78rem;color:#8c5f63;line-height:1.5;margin:15px 0 0}
   #guestName[readonly]{opacity:.85;cursor:default}
 
+
+  /* ---- Detalle de cariño y datos para obsequios ---- */
+  .gift-note { max-width: 680px; margin: 0 auto 18px; }
+  .gift-note .gift-intro { max-width: 560px; margin: 0 auto 20px; line-height: 1.7; }
+  .gift-details { width: min(100%, 460px); margin: 22px auto; padding: 20px 22px;
+    border: 1px solid rgba(184,138,74,.42); border-radius: 16px;
+    background: linear-gradient(145deg, #fffaf5, #f9eceb); text-align: left; }
+  .gift-details h3 { margin: 0 0 14px; text-align: center; color: var(--gold-dark);
+    font-size: 1.25rem; font-weight: 600; }
+  .gift-row { display: flex; justify-content: space-between; gap: 14px;
+    padding: 9px 0; border-bottom: 1px solid rgba(184,138,74,.2); line-height: 1.4; }
+  .gift-row:last-child { border-bottom: 0; }
+  .gift-row span { color: var(--muted); }
+  .gift-row strong { color: var(--gold-dark); font-weight: 600; text-align: right; overflow-wrap: anywhere; }
+  .gift-thanks { max-width: 540px; margin: 18px auto 0; line-height: 1.7; font-style: italic; }
+  @media (max-width: 420px) {
+    .gift-details { padding: 17px 15px; }
+    .gift-row { gap: 8px; font-size: .98rem; }
+  }
+
+
+  /* Legibilidad móvil: el lema del encabezado se adapta a pantallas estrechas */
+  .eyebrow {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding-inline: 8px;
+    font-size: clamp(.72rem, 3.2vw, .9rem);
+    line-height: 1.4;
+    letter-spacing: clamp(.06em, 1.1vw, .16em);
+    text-wrap: balance;
+    overflow-wrap: normal;
+  }
+  @media (max-width: 380px) {
+    .eyebrow { font-size: .72rem; letter-spacing: .055em; }
+  }
+
 </style>
 </head>
 <body class="envelope-locked">
@@ -337,7 +374,7 @@
     <h2>Tu lugar está reservado</h2>
     <div class="guest-personal-card" aria-label="Datos de invitación personal">
       <p class="guest-kicker">INVITACIÓN PERSONALIZADA PARA</p>
-      <h2 id="assignedGuest">Sr. Andres Solis y Sra. Ximena</h2>
+      <h2 id="assignedGuest">ANDRES SOLIS &amp; XIMENA</h2>
       <div class="guest-data-grid">
         <div><span class="guest-number">4</span><span class="guest-label">PASES ASIGNADOS</span></div>
         <div><span class="guest-number">10</span><span class="guest-label">MESA</span></div>
@@ -359,7 +396,8 @@
     <div class="event-details">
       <p><strong>Sábado, 5 de diciembre de 2026</strong><br>Recepción a las <strong>18:00</strong></p>
       <p><strong>Hotel Mapale San Carlos</strong><br>Tonsupa, Ecuador</p>
-      <div class="actions"><a class="gold-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Mapale+San+Carlos+Tonsupa+Ecuador" target="_blank" rel="noopener">Cómo llegar ↗</a>
+      <div class="actions"><a class="gold-btn" href="../assets/ubicacion-mapale.mp4" target="_blank" rel="noopener">Cómo llegar al local · Ver video ▶</a>
+      <a class="secondary-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Mapale+San+Carlos+Tonsupa+Ecuador" target="_blank" rel="noopener">Abrir ubicación en Maps ↗</a>
       <a class="secondary-btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Mis+XV+de+Gabriela+Liseth&amp;dates=20261205T230000Z/20261206T040000Z&amp;location=Hotel+Mapale+San+Carlos,+Tonsupa,+Ecuador" target="_blank" rel="noopener">Agregar al calendario</a></div>
     </div>
   </section>
@@ -389,14 +427,14 @@
     
     <form id="rsvpForm">
       <label for="guestName">Nombre de la invitación</label>
-      <input id="guestName" name="guestName" value="Sr. Andres Solis y Sra. Ximena" readonly>
+      <input id="guestName" name="guestName" value="ANDRES SOLIS &amp; XIMENA" readonly>
       <label for="attendance">¿Podrás acompañarnos?</label>
       <select id="attendance" name="attendance" required>
         <option value="Sí asistiré">Sí, asistiré</option>
         <option value="No podré asistir">No podré asistir</option>
       </select>
-      <label for="guestCount">¿Cuántas personas asistirán? (máximo 4)</label>
-      <select id="guestCount" name="guestCount"><option value="1">1 persona(s)</option><option value="2">2 persona(s)</option><option value="3">3 persona(s)</option><option value="4" selected>4 persona(s)</option></select>
+      <label for="guestCount">¿Cuántas personas asistirán? (máximo 4, según tu pase)</label>
+      <select id="guestCount" name="guestCount"><option value="1">1 persona</option><option value="2">2 personas</option><option value="3">3 personas</option><option value="4" selected>4 personas</option></select>
       <div class="form-actions"><button class="gold-btn" type="submit">Preparar confirmación</button></div>
     </form>
     <div class="result" id="rsvpResult" role="status" aria-live="polite">
@@ -406,6 +444,27 @@
       <p class="tiny" id="copyHint">Copia el mensaje y envíalo a la familia de Gabriela.</p>
       <button class="secondary-btn" id="copyMessage" type="button">Copiar mensaje</button>
     </div>
+  </section>
+
+
+  <section class="section gift-note" id="detalle-carino">
+    <div class="section-kicker">Un gesto especial</div>
+    <h2>Un detalle de cariño</h2>
+    <div class="ornament">✧ ♡ ✧</div>
+    <p class="dedication gift-intro">
+      Tu presencia es nuestro mejor regalo. Si deseas hacernos llegar un obsequio,
+      puedes hacerlo mediante un sobre cerrado o una transferencia bancaria.
+    </p>
+    <div class="gift-details">
+      <h3>Datos para transferencia</h3>
+      <div class="gift-row"><span>Banco</span><strong>Pichincha</strong></div>
+      <div class="gift-row"><span>Tipo de cuenta</span><strong>Cuenta Transaccional</strong></div>
+      <div class="gift-row"><span>Número</span><strong>2216748942</strong></div>
+      <div class="gift-row"><span>Titular</span><strong>Fernanda Rodriguez</strong></div>
+    </div>
+    <p class="dedication gift-thanks">
+      Gracias por acompañarnos en este momento tan especial.
+    </p>
   </section>
 
   <footer>
